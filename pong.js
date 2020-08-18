@@ -21,6 +21,46 @@ comScore.src = "sounds/comScore.mp3";
 userScore.src = "sounds/userScore.mp3";
 
 
+// Ball object
+const ball = {
+    x : canvas.width/2,
+    y : canvas.height/2,
+    radius : 10,
+    velocityX : 5,
+    velocityY : 5,
+    speed : 7,
+    color : "WHITE"
+}
+
+// User Paddle
+const user = {
+    x : 0, // left side of canvas
+    y : (canvas.height - 100)/2, // -100 the height of paddle
+    width : 10,
+    height : 100,
+    score : 0,
+    color : "WHITE"
+}
+
+// COM Paddle
+const com = {
+    x : canvas.width - 10, // - width of paddle
+    y : (canvas.height - 100)/2, // -100 the height of paddle
+    width : 10,
+    height : 100,
+    score : 0,
+    color : "WHITE"
+}
+// NET
+const net = {
+    x : (canvas.width - 2)/2,
+    y : 0,
+    height : 10,
+    width : 2,
+    color : "WHITE"
+}
+
+
 function drawRect(x, y, w, h, color){
     ctx.filterStyle = color;
     ctx.fillRect(x, y, w, h);
