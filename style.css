@@ -7,7 +7,17 @@
     left:0;
     bottom:0;
     background-color: gray;
+    font-family: 'Do Hyeon', sans-serif;
+    border-radius: 20px;
+
 }
 body{
     background-color: orange;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.divv{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
 }
