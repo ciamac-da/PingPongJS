@@ -7,5 +7,8 @@ context.filterStyle = "red"
 context.beginPath();
 context.arc( 300, 350, 100, 0, Math.PI*2,false);
 
-console.log(context)
+function drawRect(x, y, w, h, color){
+    ctx.filterStyle = color;
+    ctx.fillRect(x, y, w, h);
+}
 
